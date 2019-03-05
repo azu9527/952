@@ -1,1 +1,1 @@
-![azu](display/pat2.gif)
+![azu](display/part2.gif)
