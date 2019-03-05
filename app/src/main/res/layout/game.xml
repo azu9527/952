@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blue">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="175dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="0"
+        android:textSize="@android:dimen/app_icon_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bear"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/bearselector"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toStartOf="@+id/house"
+        app:layout_constraintTop_toTopOf="@+id/house" />
+
+    <ImageButton
+        android:id="@+id/lion"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/lionselector"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toStartOf="@+id/sun"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/bear"
+        app:layout_constraintTop_toTopOf="@+id/sun" />
+
+    <ImageButton
+        android:id="@+id/giraffeart"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/giraffeartselector"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toStartOf="@+id/bear1"
+        app:layout_constraintTop_toTopOf="@+id/bear1" />
+
+    <ImageButton
+        android:id="@+id/house1"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/house"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toStartOf="@+id/giraffeart1"
+        app:layout_constraintTop_toTopOf="@+id/giraffeart1" />
+
+    <ImageButton
+        android:id="@+id/bear1"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bearselector"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/pig"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/pigselector"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toStartOf="@+id/leo"
+        app:layout_constraintTop_toTopOf="@+id/leo" />
+
+    <ImageButton
+        android:id="@+id/lion1"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/lionselector"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toStartOf="@+id/hypoart1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/hypoart"
+        app:layout_constraintTop_toTopOf="@+id/hypoart1" />
+
+    <ImageButton
+        android:id="@+id/leo"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/leoselector"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toStartOf="@+id/leo1"
+        app:layout_constraintTop_toTopOf="@+id/leo1" />
+
+    <ImageButton
+        android:id="@+id/house"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/house"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toStartOf="@+id/giraffeart"
+        app:layout_constraintTop_toTopOf="@+id/giraffeart" />
+
+    <ImageButton
+        android:id="@+id/sun"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/sunselector"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toStartOf="@+id/house1"
+        app:layout_constraintTop_toTopOf="@+id/house1" />
+
+    <ImageButton
+        android:id="@+id/sun1"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/sunselector"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leo1" />
+
+    <ImageButton
+        android:id="@+id/hypoart"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/hypoartselector"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toStartOf="@+id/pig"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/lion"
+        app:layout_constraintTop_toTopOf="@+id/pig" />
+
+    <ImageButton
+        android:id="@+id/leo1"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/leoselector"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/giraffeart1" />
+
+    <ImageButton
+        android:id="@+id/hypoart1"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/hypoartselector"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toStartOf="@+id/pig1"
+        app:layout_constraintTop_toTopOf="@+id/pig1" />
+
+    <ImageButton
+        android:id="@+id/giraffeart1"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/giraffeartselector"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bear1" />
+
+    <ImageButton
+        android:id="@+id/pig1"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/pigselector"
+        android:onClick="onclick"
+        app:layout_constraintEnd_toStartOf="@+id/sun1"
+        app:layout_constraintTop_toTopOf="@+id/sun1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="147dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Score:"
+        android:textSize="@android:dimen/app_icon_size"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+</android.support.constraint.ConstraintLayout>
